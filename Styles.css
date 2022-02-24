@@ -1,0 +1,111 @@
+header, footer{
+   background-color: #003964;
+   grid-column-start: 1;
+   grid-column-end: 12;
+}
+
+header{
+   height: 3%;
+}
+
+body{ 
+    display:grid;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 12;
+ }
+
+main{ grid-column-start: 1;
+   grid-column-end: 12;
+}
+
+
+ /* .companyname {grid-area:companyname;}
+ #backgroundimg1{grid-area:backgroundimg1;}
+ #backgroundimg2{grid-area:backgroundimg2;}
+ #backgroundimg3{grid-area:backgroundimg3;}
+ #backgroundimg4{grid-area:backgroundimg4;}
+ #backgroundimg5{grid-area:backgroundimg5;}
+ #backgroundimg6{grid-area:backgroundimg6;}
+ #backgroundimg7{grid-area:backgroundimg8;}
+ .doggoText{grid-area: doggoText;}
+ #pawscityimg{grid-area: pawscityimg;} */
+
+
+.companyname{
+  display: grid;
+   background-color: rgb(0, 255, 13);
+   grid-column-start: 1;
+   grid-column-end: 12;
+   height: 3%;
+}
+
+#backgroundimg1{
+   height:20%;
+}
+
+#backgroundimg2{
+   height: 10%;
+}
+
+#backgroundimg3{
+   height: 10%;
+}
+
+#backgroundimg4{
+   height: 10%;
+}
+
+/* #backgroundimg5{
+   display: grid;
+} */
+
+/* #backgroundimg6{
+   display: grid;
+} */
+
+.doggoText{
+   display: grid;
+   height: 10%;
+   grid-column-start: 1;
+   grid-column-end: 12;
+  background-color: black;
+}
+
+#backgroundimg7{
+   grid-column-start: 1;
+   grid-column-end: 12;
+}
+
+
+#pawscityimg{
+   display:grid;
+   grid-column-start: 1;
+   grid-column-end: 12;
+}
+
+.size{
+width: 100%;
+display:grid;
+}
+
+@media screen and (min-width:500px) {
+   #backgroundimg2{grid-column-start: 2;
+      grid-column-end: 8;}
+   #backgroundimg3{grid-column-start: 8;
+      grid-column-end: 12;}
+}
+
+
+
+
+/* .dog{ */
+      /* background: url(./Images/sizedpuppy-hero-bg.jpg) no-repeat; */
+      /* background-position: -510px 0px; */
+  /* display: inline-flex; */
+/* } */
+
+/* .size{ */
+   /* width: 180px; width of container */
+   /* height: 180px; height of container */
+/* } */
