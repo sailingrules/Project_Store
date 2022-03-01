@@ -5,20 +5,19 @@ header, footer{
 
 
 body{ 
-    height: 100%;
-    /* grid-column-start: 1;
-    grid-column-end: 12; */
- }
+    height: 100%;}
+ 
 
  .typeofpet0{ display:grid;
    grid-template-areas:
-   "backgroundimg1  backgroundimg1" 
-   "backgroundimg2  backgroundimg3"
-   "backgroundimg4  backgroundimg5"
-   "backgroundimg6  backgroundimg6";
+   "backgroundimg1"
+   "backgroundimg2"
+   "backgroundimg3"
+   "backgroundimg4"
+   "backgroundimg5"
+   "backgroundimg6"
+   "backgroundimg7";
 }
- /* main{ grid-column-start: 1;
-   grid-column-end: 12;} */
  
 /* header{grid-template-areas:header;}
  main{grid-template-areas:main;} */
@@ -29,28 +28,22 @@ body{
  #backgroundimg4{grid-area:backgroundimg4;}
  #backgroundimg5{grid-area:backgroundimg5;}
  #backgroundimg6{grid-area:backgroundimg6;}
- /* #backgroundimg7{grid-area:backgroundimg8;} */
- /* .doggoText{grid-area: doggoText;}
- #pawscityimg{grid-area: pawscityimg;} */
+ #backgroundimg7{grid-area:backgroundimg7;}
+ /* .doggoText{grid-area: doggoText;} */
+#pawscityimg{grid-area: pawscityimg;} 
 
 
 .companyname{
   display: grid;
    background-color: rgb(0, 255, 13);
-   /* grid-column-start: 1;
-   grid-column-end: 12; */
-   /* height: 3%; */
    grid-area:companyname;
 }
 
 #backgroundimg1{
-  /* margin:0%;
-  height:18%; */
   grid-area:backgroundimg1;
 }
 
 #backgroundimg2{
-   /* height: 8.6%; */
    grid-area:backgroundimg2;
 }
 
@@ -59,41 +52,30 @@ body{
 }
 
 #backgroundimg4{
-   /* height: 10.5%; */
    grid-area:backgroundimg4;
 }
 
  #backgroundimg5{
-   /* height: 10%; */
    grid-area:backgroundimg5;
 } 
 
 #backgroundimg6{
-   /* width: 55%;
-   height: 15%; */
    grid-area:backgroundimg6;
 
 }
 
 .doggoText{
    display: grid;
-   /* height: 10%; */
-   /* grid-column-start: 1; */
-   /* grid-column-end: 12; */
   background-color: black;
 }
 
 #backgroundimg7{
-   /* grid-column-start: 1; */
-   /* grid-column-end: 12; */
    grid-area:backgroundimg7;
 }
 
 
 #pawscityimg{
    display:grid;
-   /* grid-column-start: 1;
-   grid-column-end: 12;  */
    grid-template-areas: pawscityimg;
 }
 
@@ -105,12 +87,16 @@ body{
 
 
 
-/* @media screen and (min-width:500px) {
-   #backgroundimg2{grid-column-start: 2;
-      grid-column-end: 8;}
-   #backgroundimg3{grid-column-start: 8;
-      grid-column-end: 12;}
-} */
+ @media screen and (min-width:500px) {
+   .typeofpet0{ display:grid;
+   grid-template-areas:
+   "backgroundimg1  backgroundimg1" 
+   "backgroundimg2  backgroundimg3"
+   "backgroundimg4  backgroundimg5"
+   "backgroundimg6  backgroundimg6"
+   "backgroundimg7  backgroundimg7";
+}}
+
 /* #banner{
    display: grid;
    height:300px;
@@ -127,5 +113,5 @@ body{
 
 /* .size{ */
    /* width: 180px; width of container */
-   /* height: 180px; height of container */
-/* } */
+   /* height: 180px; height of container 
+ }  */
