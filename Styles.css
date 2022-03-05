@@ -1,14 +1,69 @@
 header, footer{
-   background-color: #003964;
-    grid-column-start: 1;
-   grid-column-end: 12;}
-
-
-body{ 
-    height: 100%;}
+      background-color: #003964;}
+    /* grid-column-start: 1;
+   grid-column-end: 12;} */
  
+   /* button#hamburgerBtn{
+      background: none;
+      border:none;
+      color:#003964;
+      font-size: 2.4rem;
+      cursor: pointer;
+      padding:0 30px 0 2vw;
+   }
 
- .typeofpet0{ display:grid;
+   nav ul{
+      margin: 0;
+      padding: 0;
+   }
+
+   nav li {
+      list-style-type:none;
+   }
+   
+   #dog{
+      background-color:#f85c62;
+   }
+   
+   #cat{
+      background-color:#074980;
+   }
+   
+   #bird{
+      background-color: #f88824;
+   }
+   
+   #fish{
+      background-color: #3f9ce0;
+   }
+   
+   #reptile{
+      background-color: #39b173;
+   }
+   
+
+   nav a{
+      display:block;
+      padding: .8rem 0;
+      color:#eff3f7;
+      text-align: center;
+      text-decoration: none;}
+
+   nav a:hover{
+      background-color: rgba(0,0,0,0.2);}
+
+   nav ul.open{
+         display: block;}
+
+   nav ul {
+         display: none;} 
+   
+   nav li.active{
+      background-color: rgba(0,0,0,0.5);
+   } */
+
+    .typeofpet0{
+    display:grid;
    grid-template-areas:
    "backgroundimg1"
    "backgroundimg2"
@@ -16,12 +71,10 @@ body{
    "backgroundimg4"
    "backgroundimg5"
    "backgroundimg6"
-   "backgroundimg7";
-}
+   "backgroundimg7";}
  
-/* header{grid-template-areas:header;}
- main{grid-template-areas:main;} */
- /* .companyname {grid-area:companyname;} */
+header{grid-template-areas:header;}
+  .companyname {grid-area:companyname;}
  #backgroundimg1{grid-area:backgroundimg1;}
  #backgroundimg2{grid-area:backgroundimg2;}
  #backgroundimg3{grid-area:backgroundimg3;}
@@ -29,21 +82,21 @@ body{
  #backgroundimg5{grid-area:backgroundimg5;}
  #backgroundimg6{grid-area:backgroundimg6;}
  #backgroundimg7{grid-area:backgroundimg7;}
- /* .doggoText{grid-area: doggoText;} */
-#pawscityimg{grid-area: pawscityimg;} 
+ .doggoText{grid-area: doggoText;}
+#pawscityimg{grid-area: pawscityimg;}  
 
 
-.companyname{
+ .companyname{
   display: grid;
    background-color: rgb(0, 255, 13);
    grid-area:companyname;
-}
+} 
 
-#backgroundimg1{
+ #backgroundimg1{
   grid-area:backgroundimg1;
-}
+} 
 
-#backgroundimg2{
+ #backgroundimg2{
    grid-area:backgroundimg2;
 }
 
@@ -67,36 +120,40 @@ body{
 .doggoText{
    display: grid;
   background-color: black;
-}
+} 
 
 #backgroundimg7{
    grid-area:backgroundimg7;
 }
 
 
-#pawscityimg{
+#pawscityimg{ 
    display:grid;
-   grid-template-areas: pawscityimg;
-}
+   grid-area: pawscityimg;
+ }
 
 .typeofpet{
-   display:grid;
+   display: grid;
+   max-width:100%; 
+} 
+/* .typeofpet{
+   display: grid;
    margin: 0  auto;
-   max-width: 100%;
-}
+   max-width:100%;
+   object-fit: contain;
+} */
 
 
 
- @media screen and (min-width:500px) {
+ /* @media screen and (min-width:500px) {
    .typeofpet0{ display:grid;
    grid-template-areas:
    "backgroundimg1  backgroundimg1" 
    "backgroundimg2  backgroundimg3"
    "backgroundimg4  backgroundimg5"
    "backgroundimg6  backgroundimg6"
-   "backgroundimg7  backgroundimg7";
-}}
-
+   "backgroundimg7  backgroundimg7";}
+   } */
 /* #banner{
    display: grid;
    height:300px;
