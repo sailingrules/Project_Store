@@ -1,15 +1,23 @@
-header, footer{
-      background-color: #003964;}
-    /* grid-column-start: 1;
-   grid-column-end: 12;} */
+   
+   header, footer{
+      background-color: #003964;
+      height:100%;
+      width: 100%;
+      display: inline-block;
+   }
+   
  
-   /* button#hamburgerBtn{
-      background: none;
+    /* Start of Menu Button  */
+
+   button#hamburgerBtn{
+      background:#f7b129;
       border:none;
       color:#003964;
-      font-size: 2.4rem;
+      font-size: 4rem;
       cursor: pointer;
       padding:0 30px 0 2vw;
+      text-align: left;
+      width:100%;
    }
 
    nav ul{
@@ -42,7 +50,7 @@ header, footer{
    }
    
 
-   nav a{
+   nav a{ 
       display:block;
       padding: .8rem 0;
       color:#eff3f7;
@@ -60,115 +68,180 @@ header, footer{
    
    nav li.active{
       background-color: rgba(0,0,0,0.5);
-   } */
+   }
 
-    .typeofpet0{
-    display:grid;
+   /* End of Menu Button */
+   
+   .typeofpet0{
+    display:grid; 
    grid-template-areas:
-   "backgroundimg1"
-   "backgroundimg2"
-   "backgroundimg3"
-   "backgroundimg4"
-   "backgroundimg5"
-   "backgroundimg6"
-   "backgroundimg7";}
+   "puppyHeroMobl"
+   "packOfDogsMobl"
+   "soloCat"
+   "goldFish"
+   "talkingBird"
+   "salamander"
+   "doggoText"
+   "bullDog";}
+
  
 header{grid-template-areas:header;}
   .companyname {grid-area:companyname;}
- #backgroundimg1{grid-area:backgroundimg1;}
- #backgroundimg2{grid-area:backgroundimg2;}
- #backgroundimg3{grid-area:backgroundimg3;}
- #backgroundimg4{grid-area:backgroundimg4;}
- #backgroundimg5{grid-area:backgroundimg5;}
- #backgroundimg6{grid-area:backgroundimg6;}
- #backgroundimg7{grid-area:backgroundimg7;}
+ #puppyHeroPC{grid-area:puppyHeroPC;}
+ #puppyHeroMobl{grid-area:puppyHeroMobl;}
+ #packOfDogsMobl{grid-area:packOfDogsMobl;}
+ #packOfDogsPC{grid-area:packOfDogsPC;}
+ #soloCat{grid-area:soloCat;}
+ #goldFish{grid-area:goldfish;}
+ #talkingBird{grid-area:talkingBird;}
+ #salamander{grid-area:salamander;}
+ #bullDog{grid-area:bullDog;}
  .doggoText{grid-area: doggoText;}
 #pawscityimg{grid-area: pawscityimg;}  
 
 
  .companyname{
-  display: grid;
-   background-color: rgb(0, 255, 13);
+   display: grid;
+   background-color:#074980;
    grid-area:companyname;
 } 
 
- #backgroundimg1{
-  grid-area:backgroundimg1;
+ #puppyHeroMobl{
+   display: flex;
+   grid-area:puppyHeroMobl;
+   zoom:200%;
+   } 
+
+#puppyHeroPC{
+   display: none;
+}
+
+ #packOfDogsMobl{
+   grid-area:packOfDogsMobl;
+   zoom: 150%;
+   display: flex;
+}
+
+#packOfDogsPC{
+   display:none;
+}
+
+#soloCat{
+   grid-area:soloCat;
+}
+
+#goldFish{
+   grid-area:goldFish;
+}
+
+ #talkingBird{
+   grid-area:talkingBird;
 } 
 
- #backgroundimg2{
-   grid-area:backgroundimg2;
-}
-
-#backgroundimg3{
-   grid-area:backgroundimg3;
-}
-
-#backgroundimg4{
-   grid-area:backgroundimg4;
-}
-
- #backgroundimg5{
-   grid-area:backgroundimg5;
-} 
-
-#backgroundimg6{
-   grid-area:backgroundimg6;
-
+#salamander{
+   grid-area:salamander;
 }
 
 .doggoText{
    display: grid;
-  background-color: black;
+   background-color: black;
 } 
 
-#backgroundimg7{
-   grid-area:backgroundimg7;
+#bullDog{
+   grid-area:bullDog;
+   background-color: #074980;
 }
 
+.logoImg{
+   object-fit: scale-down;
+}
 
 #pawscityimg{ 
-   display:grid;
    grid-area: pawscityimg;
+   width: 100%;
+   margin:0 auto;
  }
+
 
 .typeofpet{
    display: grid;
-   max-width:100%; 
-} 
-/* .typeofpet{
-   display: grid;
-   margin: 0  auto;
-   max-width:100%;
-   object-fit: contain;
-} */
+   max-width: 100%; 
+   margin:0  auto; 
+}
+
+ @media screen and (min-width:700px) {
+      #puppyHeroMobl{
+         display:none;
+      }
+      #puppyHeroPC{
+         display: flex;
+      }
+      #packOfDogsPC{
+         display: none;
+      }
+      #packOfDogsMobl{
+         display:flex;
+      }
+
+      .typeofpet0{
+      display: grid;
+      grid-template-areas:
+      "puppyHeroPC     puppyHeroPC" 
+      "packOfDogsMobl      soloCat"
+      "goldFish        talkingBird"
+      "salamander      salamander"
+      "bullDog         bullDog";}
+   }
 
 
+@media screen and (min-width:1080px) {
+   #puppyHeroMobl{
+      display:none;
+   }
+   #puppyHeroPC{
+      display: flex;
+   }
+   #packOfDogsMobl{
+      display: none;
+   }
+   #packOfDogsPC{
+      display: flex;
+   }
+   .typeofpet0{
+      display: grid;
+      grid-template-areas:
+      "puppyHeroPC     puppyHeroPC     puppyHeroPC" 
+      "packOfDogsPC    packOfDogsPC      soloCat"
+      "goldFish        talkingBird     salamander"
+      "bullDog         bullDog          bullDog"
+      "pawscityimg     pawscityimg     pawscityimg";}
+   }
+ 
+   /* @media screen and (min-width:700px) {
+      #puppyHeroMobl{
+         display:none;
+      }
+      #puppyHeroPC{
+         display: flex;
+      }
+      #packOfDogsPC{
+         display: none;
+      }
+      #packOfDogsMobl{
+         display:flex;
+      }
 
- /* @media screen and (min-width:500px) {
-   .typeofpet0{ display:grid;
-   grid-template-areas:
-   "backgroundimg1  backgroundimg1" 
-   "backgroundimg2  backgroundimg3"
-   "backgroundimg4  backgroundimg5"
-   "backgroundimg6  backgroundimg6"
-   "backgroundimg7  backgroundimg7";}
+      .typeofpet0{
+      display: grid;
+      grid-template-areas:
+      "puppyHeroPC     puppyHeroPC" 
+      "packOfDogsMobl      soloCat"
+      "goldFish        talkingBird"
+      "salamander      salamander"
+      "bullDog         bullDog";}
    } */
-/* #banner{
+
+   /* #banner{
    display: grid;
    height:300px;
-   background-color: blueviolet;
-} */
-
-
-
-/* .dog{ */
-      /* background: url(./Images/sizedpuppy-hero-bg.jpg) no-repeat; */
-      /* background-position: -510px 0px; */
-  /* display: inline-flex; */
-/* } */
-
-/* .size{ */
-   /* width: 180px; width of container */
-   /* height: 180px; height of container 
- }  */
+   background-color: blueviolet;} */
