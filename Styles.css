@@ -5,7 +5,41 @@
       width: 100%;
       display: inline-block;
    }
+
+   .findAStore{
+      text-align: center;
+      color:#eff3f7;
+      line-height:3px;
+   }
+
+   .searchIcon{
+      height: 7%;
+      width: 7%;
+      object-fit: contain;
+      padding: .4em  .5em;
+      border-top-right-radius: 25%;
+      border-bottom-right-radius: 25%;
+      background-color:#f88824;}
    
+   .searchImg{
+      text-align: center;
+      block-size:auto;
+      margin: 0;
+      vertical-align: bottom;
+      height:fit-content;
+      padding-bottom: 15%;
+   }
+
+   .searchTxt{
+      height: 2.6em;
+      width: 12em;
+      vertical-align: top;
+      position: relative;
+      left: .3rem;
+      border:none;
+      border-bottom-left-radius: 10%;
+      border-top-left-radius:10%;
+      }
  
     /* Start of Menu Button  */
 
@@ -13,11 +47,11 @@
       background:#f7b129;
       border:none;
       color:#003964;
-      font-size: 4rem;
+      font-size: 3rem;
       cursor: pointer;
       padding:0 30px 0 2vw;
       text-align: left;
-      width:100%;
+      margin-bottom: 0;
    }
 
    nav ul{
@@ -75,6 +109,7 @@
    .typeofpet0{
     display:grid; 
    grid-template-areas:
+   "puppyHeroTxt"
    "puppyHeroMobl"
    "packOfDogsMobl"
    "soloCat"
@@ -82,11 +117,15 @@
    "talkingBird"
    "salamander"
    "doggoText"
-   "bullDog";}
+   "bullDog"
+   "dressdCat1"
+   "dressdCat2"
+   "dressdCat3"
+   "dressdCat4";}
 
- 
-header{grid-template-areas:header;}
-  .companyname {grid-area:companyname;}
+header{grid-area:header;}
+.companyname {grid-area:companyname;}
+.puppyHeroTxt{grid-area:puppyHeroTxt;}
  #puppyHeroPC{grid-area:puppyHeroPC;}
  #puppyHeroMobl{grid-area:puppyHeroMobl;}
  #packOfDogsMobl{grid-area:packOfDogsMobl;}
@@ -97,6 +136,11 @@ header{grid-template-areas:header;}
  #salamander{grid-area:salamander;}
  #bullDog{grid-area:bullDog;}
  .doggoText{grid-area: doggoText;}
+ .dressdCatBx{grid-area: dressdCatBx;}
+ .dressdCat1{grid-area: dressdCat1;}
+ .dressdCat2{grid-area: dressdCat2;}
+ .dressdCat3{grid-area: dressdCat3;}
+ .dressdCat4{grid-area: dressdCat4;}
 #pawscityimg{grid-area: pawscityimg;}  
 
 
@@ -104,6 +148,8 @@ header{grid-template-areas:header;}
    display: grid;
    background-color:#074980;
    grid-area:companyname;
+   height:10rem;
+   padding-bottom:50px;
 } 
 
  #puppyHeroMobl{
@@ -111,6 +157,28 @@ header{grid-template-areas:header;}
    grid-area:puppyHeroMobl;
    zoom:200%;
    } 
+
+.puppyHeroTxt{
+   position: relative;
+   display: grid;
+   grid-area:puppyHeroTxt;
+   color: #003964;
+   width:100%;
+   height: fit-content;
+   background-color: #f7b129;
+   margin: 0;
+}
+
+.puppyHeroTxt  h1{
+   position: absolute;
+   padding-top: 5%;
+}
+
+.puppyHeroTxt p {
+   position: absolute;
+   padding-top:60%;
+   word-wrap: break-word;
+}
 
 #puppyHeroPC{
    display: none;
@@ -144,7 +212,10 @@ header{grid-template-areas:header;}
 
 .doggoText{
    display: grid;
-   background-color: black;
+   background-color:#074980;
+   width: 100%;
+   height: 10rem;
+   color:#eff3f7;
 } 
 
 #bullDog{
@@ -152,8 +223,20 @@ header{grid-template-areas:header;}
    background-color: #074980;
 }
 
+.dressdCatBx{
+   display: grid;
+   grid-area: dressdCatBx;
+   margin: 0 auto;
+   width:fit-content;
+   height: fit-content;}
+
+
 .logoImg{
-   object-fit: scale-down;
+   height: 60%;
+   width: 60%;
+   object-fit: contain;
+   margin: 0 auto;
+   padding-top: 7%;
 }
 
 #pawscityimg{ 
@@ -170,6 +253,47 @@ header{grid-template-areas:header;}
 }
 
  @media screen and (min-width:700px) {
+   header, footer{
+      background-color: #003964;
+      height:100%;
+      width: 100%;
+   }
+
+   .searchTxt{
+      height: 2.6em;
+      width: 12em;
+      vertical-align: top;
+      position: relative;
+      left: .3rem;
+      border:none;
+      border-bottom-left-radius: 10%;
+      border-top-left-radius:10%;
+      }
+
+   .companyname{
+      display: grid;
+      background-color:#074980;
+      grid-area:companyname;
+      height:4rem;
+      padding-bottom:50px;
+   } 
+
+   .searchImg{
+      text-align: center;
+      margin: 0;
+      vertical-align:top;
+      height:fit-content;
+      }
+   
+   .logoImg{
+      height: 25%;
+      width:fit-content;
+      object-fit:contain;
+      padding-top: 1.8%;
+      padding-left:2%;
+      margin-left: 0;
+   }
+      
       #puppyHeroMobl{
          display:none;
       }
@@ -186,15 +310,42 @@ header{grid-template-areas:header;}
       .typeofpet0{
       display: grid;
       grid-template-areas:
+      "puppyHeroTxt    puppyHeroTxt"
       "puppyHeroPC     puppyHeroPC" 
       "packOfDogsMobl      soloCat"
       "goldFish        talkingBird"
       "salamander      salamander"
+      "doggoText       doggoText"
       "bullDog         bullDog";}
    }
 
 
 @media screen and (min-width:1080px) {
+   header, footer{
+      background-color: #003964;
+      height:100%;
+      width: 100%;
+      display: inline-block;
+   }
+
+
+   
+   .puppyHeroTxt  h1{
+      display:grid;
+      grid-area: puppyHeroTxt;
+   }
+
+   .puppyHeroTxt p {
+      position: absolute;
+      padding-top:60%;
+      
+   }
+   
+   .demoCat{
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+   }
    #puppyHeroMobl{
       display:none;
    }
@@ -210,37 +361,15 @@ header{grid-template-areas:header;}
    .typeofpet0{
       display: grid;
       grid-template-areas:
+      "puppyHeroTxt    puppyHeroTxt    puppyHeroTxt"
       "puppyHeroPC     puppyHeroPC     puppyHeroPC" 
       "packOfDogsPC    packOfDogsPC      soloCat"
       "goldFish        talkingBird     salamander"
+      "doggoText       doggoText        doggoText"
       "bullDog         bullDog          bullDog"
       "pawscityimg     pawscityimg     pawscityimg";}
    }
  
-   /* @media screen and (min-width:700px) {
-      #puppyHeroMobl{
-         display:none;
-      }
-      #puppyHeroPC{
-         display: flex;
-      }
-      #packOfDogsPC{
-         display: none;
-      }
-      #packOfDogsMobl{
-         display:flex;
-      }
-
-      .typeofpet0{
-      display: grid;
-      grid-template-areas:
-      "puppyHeroPC     puppyHeroPC" 
-      "packOfDogsMobl      soloCat"
-      "goldFish        talkingBird"
-      "salamander      salamander"
-      "bullDog         bullDog";}
-   } */
-
    /* #banner{
    display: grid;
    height:300px;
