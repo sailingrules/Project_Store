@@ -47,11 +47,15 @@
       background:#f7b129;
       border:none;
       color:#003964;
-      font-size: 3rem;
+      font-size: 3.5rem;
       cursor: pointer;
       padding:0 30px 0 2vw;
       text-align: left;
       margin-bottom: 0;
+   }
+
+   .menuBtn{
+      background:#f7b129;
    }
 
    nav ul{
@@ -168,14 +172,13 @@ header{grid-area:header;}
    background-color: #f7b129;
    margin: 0;
 }
-
-.puppyHeroTxt  h1{
+/* all I did was add the pictures to the .puppyHeroTxt div 
+and make the h1 and p tags position absolute.  */
+.puppyHeroTxt h1{
    position: absolute;
-   padding-top: 5%;
 }
-
 .puppyHeroTxt p {
-   position: absolute;
+   position:absolute;
    padding-top:60%;
    word-wrap: break-word;
 }
@@ -196,6 +199,7 @@ header{grid-area:header;}
 
 #soloCat{
    grid-area:soloCat;
+   object-fit: fill;
 }
 
 #goldFish{
@@ -229,6 +233,12 @@ header{grid-area:header;}
    margin: 0 auto;
    width:fit-content;
    height: fit-content;}
+
+.productInfo{
+   height:3rem;
+   width:2rem;
+   background-color: #39b173;
+   }
 
 
 .logoImg{
@@ -279,9 +289,7 @@ header{grid-area:header;}
    } 
 
    .searchImg{
-      text-align: center;
-      margin: 0;
-      vertical-align:top;
+      display: none;
       height:fit-content;
       }
    
@@ -341,6 +349,18 @@ header{grid-area:header;}
       
    }
    
+   #soloCat{
+      margin-top: 2%;
+      height: 800px;
+      width: 600px;
+   }
+
+   #packOfDogsPC{
+      width: 1200px;
+      height: 800px;
+      margin-top: 1%;
+   }
+
    .demoCat{
       width: 300px;
       height: 300px;
