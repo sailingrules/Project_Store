@@ -296,7 +296,9 @@ and make the h1 and p tags position absolute.  */
       "goldFish        talkingBird"
       "salamander      salamander"
       "doggoText       doggoText"
-      "bullDog         bullDog";}
+      "bullDog         bullDog"
+      "dressdCat1      dressdCat2"
+      "dressdCat3       dressdCat4";}
    }
 
 
@@ -358,7 +360,8 @@ and make the h1 and p tags position absolute.  */
       "goldFish        talkingBird     salamander"
       "doggoText       doggoText        doggoText"
       "bullDog         bullDog          bullDog"
-      "pawscityimg     pawscityimg     pawscityimg";}
+      "pawscityimg     pawscityimg     pawscityimg"
+       "dressdCat1      dressdCat2      dressdCat3 " ;}     /*dressdCat4";} */
    }
  
    /* #banner{
