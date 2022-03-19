@@ -3,14 +3,14 @@
       background-color: #003964;
       height:100%;
       width: 100%;
-      display: inline-block;
-   }
+      display: inline-block;}
 
    .findAStore{
       text-align: center;
       color:#eff3f7;
-      line-height:3px;
-   }
+      line-height:3px;}
+
+   /* Search input and related image */
 
    .searchIcon{
       height: 7%;
@@ -27,8 +27,7 @@
       margin: 0;
       vertical-align: bottom;
       height:fit-content;
-      padding-bottom: 15%;
-   }
+      padding-bottom: 15%;}
 
    .searchTxt{
       height: 2.6em;
@@ -38,8 +37,7 @@
       left: .3rem;
       border:none;
       border-bottom-left-radius: 10%;
-      border-top-left-radius:10%;
-      }
+      border-top-left-radius:10%;}
  
     /* Start of Menu Button  */
 
@@ -51,43 +49,33 @@
       cursor: pointer;
       padding:0 30px 0 2vw;
       text-align: left;
-      margin-bottom: 0;
-   }
+      margin-bottom: 0;}
 
    .menuBtn{
-      background:#f7b129;
-   }
+      background:#f7b129;}
 
    nav ul{
       margin: 0;
-      padding: 0;
-   }
+      padding: 0;}
 
    nav li {
-      list-style-type:none;
-   }
+      list-style-type:none;}
    
    #dog{
-      background-color:#f85c62;
-   }
+      background-color:#f85c62;}
    
    #cat{
-      background-color:#074980;
-   }
+      background-color:#074980;}
    
    #bird{
-      background-color: #f88824;
-   }
+      background-color: #f88824;}
    
    #fish{
-      background-color: #3f9ce0;
-   }
+      background-color: #3f9ce0;}
    
    #reptile{
-      background-color: #39b173;
-   }
+      background-color: #39b173;}
    
-
    nav a{ 
       display:block;
       padding: .8rem 0;
@@ -105,11 +93,18 @@
          display: none;} 
    
    nav li.active{
-      background-color: rgba(0,0,0,0.5);
-   }
+      background-color: rgba(0,0,0,0.5);}
 
    /* End of Menu Button */
    
+   /* Buttons for Non for sale background images */
+
+   .typeofpetBtn{
+      height:2rem;
+      width:7rem;
+      background-color: crimson;
+   }
+
    .typeofpet0{
     display:grid; 
    grid-template-areas:
@@ -153,14 +148,12 @@ header{grid-area:header;}
    background-color:#074980;
    grid-area:companyname;
    height:10rem;
-   padding-bottom:50px;
-} 
+   padding-bottom:50px;} 
 
  #puppyHeroMobl{
    display: flex;
    grid-area:puppyHeroMobl;
-   zoom:200%;
-   } 
+   zoom:200%;} 
 
 .puppyHeroTxt{
    position: relative;
@@ -170,8 +163,8 @@ header{grid-area:header;}
    width:100%;
    height: fit-content;
    background-color: #f7b129;
-   margin: 0;
-}
+   margin: 0;}
+
 /* all I did was add the pictures to the .puppyHeroTxt div 
 and make the h1 and p tags position absolute.  */
 .puppyHeroTxt h1{
@@ -184,48 +177,39 @@ and make the h1 and p tags position absolute.  */
 }
 
 #puppyHeroPC{
-   display: none;
-}
+   display: none;}
 
  #packOfDogsMobl{
    grid-area:packOfDogsMobl;
    zoom: 150%;
-   display: flex;
-}
+   display: flex;}
 
 #packOfDogsPC{
-   display:none;
-}
+   display:none;}
 
 #soloCat{
    grid-area:soloCat;
-   object-fit: fill;
-}
+   object-fit: fill;}
 
 #goldFish{
-   grid-area:goldFish;
-}
+   grid-area:goldFish;}
 
  #talkingBird{
-   grid-area:talkingBird;
-} 
+   grid-area:talkingBird;} 
 
 #salamander{
-   grid-area:salamander;
-}
+   grid-area:salamander;}
 
 .doggoText{
    display: grid;
    background-color:#074980;
    width: 100%;
    height: 10rem;
-   color:#eff3f7;
-} 
+   color:#eff3f7;} 
 
 #bullDog{
    grid-area:bullDog;
-   background-color: #074980;
-}
+   background-color: #074980;}
 
 .dressdCatBx{
    display: grid;
@@ -235,39 +219,32 @@ and make the h1 and p tags position absolute.  */
    height: fit-content;}
 
 .productInfo{
-   height:3rem;
-   width:2rem;
-   background-color: #39b173;
-   }
-
+   height:2rem;
+   width:10rem;
+   background-color: #39b173;}
 
 .logoImg{
    height: 60%;
    width: 60%;
    object-fit: contain;
    margin: 0 auto;
-   padding-top: 7%;
-}
+   padding-top: 7%;}
 
 #pawscityimg{ 
    grid-area: pawscityimg;
    width: 100%;
-   margin:0 auto;
- }
-
+   margin:0 auto;}
 
 .typeofpet{
    display: grid;
    max-width: 100%; 
-   margin:0  auto; 
-}
+   margin:0  auto; }
 
  @media screen and (min-width:700px) {
    header, footer{
       background-color: #003964;
       height:100%;
-      width: 100%;
-   }
+      width: 100%;}
 
    .searchTxt{
       height: 2.6em;
@@ -277,21 +254,18 @@ and make the h1 and p tags position absolute.  */
       left: .3rem;
       border:none;
       border-bottom-left-radius: 10%;
-      border-top-left-radius:10%;
-      }
+      border-top-left-radius:10%;}
 
    .companyname{
       display: grid;
       background-color:#074980;
       grid-area:companyname;
       height:4rem;
-      padding-bottom:50px;
-   } 
+      padding-bottom:50px;} 
 
    .searchImg{
       display: none;
-      height:fit-content;
-      }
+      height:fit-content;}
    
    .logoImg{
       height: 25%;
@@ -299,21 +273,19 @@ and make the h1 and p tags position absolute.  */
       object-fit:contain;
       padding-top: 1.8%;
       padding-left:2%;
-      margin-left: 0;
-   }
+      margin-left: 0;}
       
       #puppyHeroMobl{
-         display:none;
-      }
+         display:none;}
+
       #puppyHeroPC{
-         display: flex;
-      }
+         display: flex;}
+
       #packOfDogsPC{
-         display: none;
-      }
+         display: none;}
+
       #packOfDogsMobl{
-         display:flex;
-      }
+         display:flex;}
 
       .typeofpet0{
       display: grid;
@@ -333,8 +305,7 @@ and make the h1 and p tags position absolute.  */
       background-color: #003964;
       height:100%;
       width: 100%;
-      display: inline-block;
-   }
+      display: inline-block;}
 
 
    
