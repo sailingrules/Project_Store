@@ -51,8 +51,12 @@
       text-align: left;
       margin-bottom: 0;}
 
+   #primarynav{
+      position:absolute;
+   }
    .menuBtn{
-      background:#f7b129;}
+      background:#f7b129;
+      position:relative;}
 
    nav ul{
       margin: 0;
@@ -165,8 +169,6 @@ header{grid-area:header;}
    background-color: #f7b129;
    margin: 0;}
 
-/* all I did was add the pictures to the .puppyHeroTxt div 
-and make the h1 and p tags position absolute.  */
 .puppyHeroTxt h1{
    position: absolute;
 }
@@ -213,10 +215,16 @@ and make the h1 and p tags position absolute.  */
 
 .dressdCatBx{
    display: grid;
+   grid-template-columns: 1fr;
    grid-area: dressdCatBx;
    margin: 0 auto;
    width:fit-content;
    height: fit-content;}
+
+.catTile{
+   display: flex;
+   flex-direction: column;
+   }
 
 .productInfo{
    height:2rem;
@@ -245,6 +253,15 @@ and make the h1 and p tags position absolute.  */
       background-color: #003964;
       height:100%;
       width: 100%;}
+   
+   .dressdCatBx{
+      display: grid;
+      grid-area: dressdCatBx;
+      grid-template-columns: 2fr 2fr;
+      grid-template-rows: 2fr 2fr;
+      margin: 0 auto;
+      width:fit-content;
+      height: fit-content;}
 
    .searchTxt{
       height: 2.6em;
@@ -309,7 +326,13 @@ and make the h1 and p tags position absolute.  */
       width: 100%;
       display: inline-block;}
 
-
+   .dressdCatBx{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-area:dressdCatBx ;
+      margin: 0 auto;
+      width:fit-content;
+      height: fit-content;}
    
    .puppyHeroTxt  h1{
       display:grid;
