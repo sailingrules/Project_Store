@@ -102,7 +102,7 @@
 
    .mainImgGrid{
       display:grid;
-      gap: 2rem;
+      gap: 0;
       grid-template-areas:
       "one"
       "two"
@@ -219,11 +219,24 @@ header{grid-area:header;}
 .typeofpetBtn{
   position:absolute;
   margin-left: 50px;
+  height: 35px;
+  width: 115px;
+  border-style: ridge;
+  border-color: #eff3f7;
+  background-color: transparent;
+}
+
+.shop{
+   margin: 0;
+   text-align: center;
+   color: #eff3f7;
 }
 
 #puppyHeroBtn{
    top:650px;
    margin: 0px  150px;
+   border-color: #f88824;
+   background-color: #f88824;
 }
 
 #packofDogsBtn{
@@ -232,21 +245,28 @@ header{grid-area:header;}
 
 #packOfDogsPC{
    object-fit:cover;
-   object-position: left;
-
-}
+   object-position:left;
+   }
 
 #soloCat{
    grid-area:soloCat;
    object-fit:cover;
-   grid-gap:0;}
+   row-gap: 0;}
 
 #soloCatBtn{
-   top: 2180px;
+   top: 2165px;
 }
 
 #fishBtn{
-   top: 2640px;
+   top: 2600px;
+}
+
+#birdBtn{
+   top: 2980px;
+}
+
+#snakeBtn{
+   top:3200px;
 }
 
 #goldFish{
@@ -307,6 +327,7 @@ header{grid-area:header;}
    display: grid;
    max-width: 100%; 
    margin:0  auto;
+   row-gap: 0;
 }
 
  @media screen and (min-width:700px) {
@@ -434,6 +455,7 @@ header{grid-area:header;}
       width: 300px;
       height: 300px;
       margin: 0 auto;
+      enable-background: #3f9ce0;
    }
    #puppyHeroMobl{
       display:none;
