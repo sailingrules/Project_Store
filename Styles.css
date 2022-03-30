@@ -134,12 +134,6 @@
    
    /* Buttons for Non for sale background images */
 
-   .typeofpetBtn{
-      height:2rem;
-      width:7rem;
-      background-color: crimson;
-   }
-
    .typeofpet0{
    display:grid; 
    grid-template-areas:
@@ -225,7 +219,10 @@ header{grid-area:header;}
   border-color: #eff3f7;
   background-color: transparent;
 }
-
+.one p{
+   position: absolute;
+   top:1500;
+}
 .shop{
    margin: 0;
    text-align: center;
@@ -266,7 +263,7 @@ header{grid-area:header;}
 }
 
 #snakeBtn{
-   top:3200px;
+   top:3225px;
 }
 
 #goldFish{
@@ -414,11 +411,19 @@ header{grid-area:header;}
       width: 100%;
       display: inline-block;}
    
-      .mainImgGrid{
-         grid-template-areas:
-         "one    one    two"
-         "three  four   five";
-      }
+   button#hamburgerBtn{
+      display:none;
+   }
+   
+   .mainImgGrid{
+   padding: 10% 10%;
+   row-gap: 3rem;
+   column-gap: 3rem;
+   height: 300px;
+   grid-template-areas:
+      "one    one    two"
+      "three  four   five";
+   }
    
    .dressdCatBx{
       display: grid;
