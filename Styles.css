@@ -187,7 +187,8 @@ header{grid-area:header;}
 
  #puppyHeroMobl{
    display: flex;
-   grid-area:puppyHeroMobl;} 
+   grid-area:puppyHeroMobl;
+} 
 
 .puppyHeroTxt{
    position: relative;
@@ -213,15 +214,40 @@ header{grid-area:header;}
 
  #packOfDogsMobl{
    grid-area:packOfDogsMobl;
-   zoom: 150%;
    display: flex;}
 
+.typeofpetBtn{
+  position:absolute;
+  margin-left: 50px;
+}
+
+#puppyHeroBtn{
+   top:650px;
+   margin: 0px  150px;
+}
+
+#packofDogsBtn{
+   top: 1550px;
+}
+
 #packOfDogsPC{
-   display:none;}
+   object-fit:cover;
+   object-position: left;
+
+}
 
 #soloCat{
    grid-area:soloCat;
-   object-fit: fill;}
+   object-fit:cover;
+   grid-gap:0;}
+
+#soloCatBtn{
+   top: 2180px;
+}
+
+#fishBtn{
+   top: 2640px;
+}
 
 #goldFish{
    grid-area:goldFish;}
@@ -280,7 +306,8 @@ header{grid-area:header;}
    width:100%;
    display: grid;
    max-width: 100%; 
-   margin:0  auto; }
+   margin:0  auto;
+}
 
  @media screen and (min-width:700px) {
    header, footer{
