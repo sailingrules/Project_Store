@@ -4,7 +4,7 @@
       height:100%;
       width: 100%;
       display: inline-block;}
-
+   
    .findAStore{
       text-align: center;
       color:#eff3f7;
@@ -417,8 +417,7 @@ header{grid-area:header;}
    
    .mainImgGrid{
    padding: 10% 10%;
-   row-gap: 3rem;
-   column-gap: 3rem;
+   gap: 3rem;
    height: 300px;
    grid-template-areas:
       "one    one    two"
@@ -486,7 +485,7 @@ header{grid-area:header;}
       "pawscityimg     pawscityimg     pawscityimg";}    
    }
  
-   /* #banner{
+   #banner{
    display: grid;
    height:300px;
-   background-color: blueviolet;} */
+   background-color: blueviolet;}
