@@ -8,8 +8,14 @@
    .closeBtn{
       height: 50px;
       width: 50px;
-      background-color: #003964;
+      background-color:red;
+      border:none;
       color: #eff3f7;
+   }
+
+   .saleTxt{
+      text-align: center;
+      color:#eff3f7;
    }
    .findAStore{
       text-align: center;
@@ -212,23 +218,18 @@ header{grid-area:header;}
 #puppyHeroPC{
    display: none;}
 
- #packOfDogsMobl{
+#packOfDogsMobl{
    grid-area:packOfDogsMobl;
    display: flex;}
 
 .typeofpetBtn{
-  position:absolute;
-  margin-left: 50px;
   height: 35px;
   width: 115px;
   border-style: ridge;
   border-color: #eff3f7;
   background-color: transparent;
 }
-.one p{
-   position: absolute;
-   top:1500;
-}
+
 .shop{
    margin: 0;
    text-align: center;
@@ -492,5 +493,5 @@ header{grid-area:header;}
  
    #banner{
    display: grid;
-   height:300px;
-   background-color: blueviolet;}
+   height:100px;
+   background-color:red;}
