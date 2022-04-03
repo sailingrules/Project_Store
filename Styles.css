@@ -1,497 +1,590 @@
-   
-   header, footer{
-      background-color: #003964;
-      height:100%;
-      width: 100%;
-      display: inline-block;}
-   
-   .closeBtn{
-      height: 50px;
-      width: 50px;
-      background-color:red;
-      border:none;
-      color: #eff3f7;
-   }
+header,
+footer {
+   background-color: #003964;
+   height: 100%;
+   width: 100%;
+   display: inline-block;
+}
 
-   .saleTxt{
-      text-align: center;
-      color:#eff3f7;
-   }
-   .findAStore{
-      text-align: center;
-      color:#eff3f7;
-      line-height:3px;}
+.closeBtn {
+   height: 50px;
+   width: 50px;
+   background-color: red;
+   border: none;
+   color: #eff3f7;
+}
 
-   /* Search input and related image */
+.saleTxt {
+   text-align: center;
+   color: #eff3f7;
+}
 
-   .searchIcon{
-      height: 7%;
-      width: 7%;
-      object-fit: contain;
-      padding: .4em  .5em;
-      border-top-right-radius: 25%;
-      border-bottom-right-radius: 25%;
-      background-color:#f88824;}
-   
-   .searchImg{
-      text-align: center;
-      block-size:auto;
-      margin: 0;
-      vertical-align: bottom;
-      height:fit-content;
-      padding-bottom: 15%;}
+.findAStore {
+   text-align: center;
+   color: #eff3f7;
+   line-height: 3px;
+}
 
-   .searchTxt{
-      height: 2.6em;
-      width: 12em;
-      vertical-align: top;
-      position: relative;
-      left: .3rem;
-      border:none;
-      border-bottom-left-radius: 10%;
-      border-top-left-radius:10%;}
- 
-    /* Start of Menu Button  */
+/* Search input and related image */
 
-   button#hamburgerBtn{
-      background:#f7b129;
-      border:none;
-      color:#003964;
-      font-size: 3.5rem;
-      cursor: pointer;
-      padding:0 30px 0 2vw;
-      text-align: left;
-      margin-bottom: 0;}
-   
+.searchIcon {
+   height: 7%;
+   width: 7%;
+   object-fit: contain;
+   padding: .4em .5em;
+   border-top-right-radius: 25%;
+   border-bottom-right-radius: 25%;
+   background-color: #f88824;
+}
 
-   .menuBtn{
-      display:block;
-      position:relative;
-      background:#f7b129;}
+.searchImg {
+   text-align: center;
+   block-size: auto;
+   margin: 0;
+   vertical-align: bottom;
+   height: fit-content;
+   padding-bottom: 15%;
+}
 
-   nav ul{
-      margin: 0;
-      padding: 0;}
+.searchTxt {
+   height: 2.6em;
+   width: 12em;
+   vertical-align: top;
+   /* position: relative; */
+   left: .3rem;
+   border: none;
+   border-bottom-left-radius: 10%;
+   border-top-left-radius: 10%;
+}
 
-   nav li {
-      list-style-type:none;}
-   
-   #dog{
-      background-color:#f85c62;}
-   
-   #cat{
-      background-color:#074980;}
-   
-   #bird{
-      background-color: #f88824;}
-   
-   #fish{
-      background-color: #3f9ce0;}
-   
-   #reptile{
-      background-color: #39b173;}
-   
-   nav a{ 
-      display:block;
-      padding: .8rem 0;
-      color:#eff3f7;
-      text-align: center;
-      text-decoration: none;}
+/* Start of Menu Button  */
 
-   nav a:hover{
-      background-color: rgba(0,0,0,0.2);}
+button#hamburgerBtn {
+   background: #f7b129;
+   border: none;
+   color: #003964;
+   font-size: 3.5rem;
+   cursor: pointer;
+   padding: 0 30px 0 2vw;
+   text-align: left;
+   margin-bottom: 0;
+}
 
-   nav ul.open{
-         display: block;}
 
-   nav ul {
-         display: none;} 
-   
-   nav li.active{
-      background-color: rgba(0,0,0,0.5);}
+.menuBtn {
+   display: block;
+   /* position: relative; */
+   background: #f7b129;
+}
 
-   /* End of Menu Button */
+nav ul {
+   margin: 0;
+   padding: 0;
+}
 
-   .mainImgGrid{
-      display:grid;
-      gap: 0;
-      grid-template-areas:
+nav li {
+   list-style-type: none;
+}
+
+#dog {
+   background-color: #f85c62;
+}
+
+#cat {
+   background-color: #074980;
+}
+
+#bird {
+   background-color: #f88824;
+}
+
+#fish {
+   background-color: #3f9ce0;
+}
+
+#reptile {
+   background-color: #39b173;
+}
+
+nav a {
+   display: block;
+   padding: .8rem 0;
+   color: #eff3f7;
+   text-align: center;
+   text-decoration: none;
+}
+
+nav a:hover {
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav ul.open {
+   display: block;
+}
+
+nav ul {
+   display: none;
+}
+
+nav li.active {
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* End of Menu Button */
+
+.mainImgGrid {
+   display: grid;
+   gap: 0;
+   grid-template-areas:
       "one"
       "two"
       "three"
       "four"
       "five";
-      grid-template-rows: 600px 600px;
-   }
+}
 
-   .one{
-      grid-area: one;
-   }
+.one {
+   grid-area: one;
+}
 
-   .two{
-      grid-area: two;
-   }
+.two {
+   grid-area: two;
+}
 
-   .three{
-      grid-area: three;
-   }
+.three {
+   grid-area: three;
+}
 
-   .four{
-      grid-area:four;
-   }
+.four {
+   grid-area: four;
+}
 
-   .five{
-      grid-area:five;
-   }
-   
-   /* Buttons for Non for sale background images */
+.five {
+   grid-area: five;
+}
 
-   .typeofpet0{
-   display:grid; 
+/* Buttons for Non for sale background images */
+
+.dog-yellow-div {
+   display: grid;
    grid-template-areas:
    "puppyHeroTxt"
-   "puppyHeroMobl"
-   "packOfDogsMobl"
-   "soloCat"
-   "goldFish"
-   "talkingBird"
-   "salamander"
-   "doggoText"
-   "bullDog"
-   "dressdCat1"
-   "dressdCat2"
-   "dressdCat3"
-   "dressdCat4";}
+   "puppyHeroPC"
+   "typeofpetBtn"
+   ;
+}
 
-header{grid-area:header;}
-.companyname {grid-area:companyname;}
-.puppyHeroTxt{grid-area:puppyHeroTxt;}
- #puppyHeroPC{grid-area:puppyHeroPC;}
- #puppyHeroMobl{grid-area:puppyHeroMobl;}
- #packOfDogsMobl{grid-area:packOfDogsMobl;}
- #packOfDogsPC{grid-area:packOfDogsPC;}
- #soloCat{grid-area:soloCat;}
- #goldFish{grid-area:goldfish;}
- #talkingBird{grid-area:talkingBird;}
- #salamander{grid-area:salamander;}
- #bullDog{grid-area:bullDog;}
- .doggoText{grid-area: doggoText;}
- .dressdCatBx{grid-area: dressdCatBx;}
- .dressdCat1{grid-area: dressdCat1;}
- .dressdCat2{grid-area: dressdCat2;}
- .dressdCat3{grid-area: dressdCat3;}
- .dressdCat4{grid-area: dressdCat4;}
-#pawscityimg{grid-area: pawscityimg;}  
+header {
+   grid-area: header;
+}
+
+.companyname {
+   grid-area: companyname;
+}
+
+.puppyHeroTxt {
+   grid-area: puppyHeroTxt;
+}
+
+#puppyHeroPC {
+   grid-area: puppyHeroPC;
+}
+
+#puppyHeroMobl {
+   grid-area: puppyHeroMobl;
+}
+
+#packOfDogsMobl {
+   grid-area: packOfDogsMobl;
+}
+
+#packOfDogsPC {
+   grid-area: packOfDogsPC;
+}
+
+#soloCat {
+   grid-area: soloCat;
+}
+
+#goldFish {
+   grid-area: goldfish;
+}
+
+#talkingBird {
+   grid-area: talkingBird;
+}
+
+#salamander {
+   grid-area: salamander;
+}
+
+#bullDog {
+   grid-area: bullDog;
+}
+
+.doggoText {
+   grid-area: doggoText;
+}
+
+.dressdCatBx {
+   grid-area: dressdCatBx;
+}
+
+.dressdCat1 {
+   grid-area: dressdCat1;
+}
+
+.dressdCat2 {
+   grid-area: dressdCat2;
+}
+
+.dressdCat3 {
+   grid-area: dressdCat3;
+}
+
+.dressdCat4 {
+   grid-area: dressdCat4;
+}
+
+.open-sign-div {
+   grid-area: open-sign-div;
+   width: 100%;
+   margin:0 auto;
+}
 
 
- .companyname{
+.companyname {
    display: grid;
-   background-color:#074980;
-   grid-area:companyname;
-   height:10rem;
-   padding-bottom:50px;} 
+   background-color: #074980;
+   grid-area: companyname;
+   height: 10rem;
+   padding-bottom: 50px;
+}
 
- #puppyHeroMobl{
+#puppyHeroMobl {
    display: flex;
-   grid-area:puppyHeroMobl;
-} 
+   grid-area: puppyHeroMobl;
+}
 
-.puppyHeroTxt{
-   position: relative;
+.puppyHeroTxt {
+   /* position: relative; */
    display: grid;
-   grid-area:puppyHeroTxt;
+   grid-area: puppyHeroTxt;
    color: #003964;
-   width:100%;
+   width: 100%;
    height: fit-content;
    background-color: #f7b129;
-   margin: 0;}
-
-.puppyHeroTxt h1{
-   position: absolute;
+   margin: 0;
 }
+
+.puppyHeroTxt h1 {
+   /* position: absolute; */
+}
+
 .puppyHeroTxt p {
-   position:absolute;
-   padding-top:60%;
+   /* position: absolute; */
+   padding-top: 60%;
    word-wrap: break-word;
 }
 
-#puppyHeroPC{
-   display: none;}
-
-#packOfDogsMobl{
-   grid-area:packOfDogsMobl;
-   display: flex;}
-
-.typeofpetBtn{
-  height: 35px;
-  width: 115px;
-  border-style: ridge;
-  border-color: #eff3f7;
-  background-color: transparent;
+#puppyHeroPC {
+   display: none;
 }
 
-.shop{
+#packOfDogsMobl {
+   grid-area: packOfDogsMobl;
+   display: flex;
+}
+
+.typeofpetBtn {
+   height: 35px;
+   width: 115px;
+   border-style: ridge;
+   border-color: #eff3f7;
+   background-color: transparent;
+   grid-area: typeofpetBtn;
+}
+
+.shop {
    margin: 0;
    text-align: center;
    color: #eff3f7;
 }
 
-#puppyHeroBtn{
-   top:650px;
-   margin: 0px  150px;
+#puppyHeroBtn {
+   margin: 0px 150px;
    border-color: #f88824;
    background-color: #f88824;
 }
 
-#packofDogsBtn{
+#packofDogsBtn {
    top: 1550px;
 }
 
-#packOfDogsPC{
-   object-fit:cover;
-   object-position:left;
-   }
+#packOfDogsPC {
+   object-fit: cover;
+   object-position: left;
+}
 
-#soloCat{
-   grid-area:soloCat;
-   object-fit:cover;
-   row-gap: 0;}
+#soloCat {
+   grid-area: soloCat;
+   object-fit: cover;
+   row-gap: 0;
+}
 
-#soloCatBtn{
+#soloCatBtn {
    top: 2165px;
 }
 
-#fishBtn{
+#fishBtn {
    top: 2600px;
 }
 
-#birdBtn{
+#birdBtn {
    top: 2980px;
 }
 
-#snakeBtn{
-   top:3225px;
+#snakeBtn {
+   top: 3225px;
 }
 
-#goldFish{
-   grid-area:goldFish;}
+#goldFish {
+   grid-area: goldFish;
+}
 
- #talkingBird{
-   grid-area:talkingBird;} 
+#talkingBird {
+   grid-area: talkingBird;
+}
 
-#salamander{
-   grid-area:salamander;}
+#salamander {
+   grid-area: salamander;
+}
 
-.doggoText{
+.doggoText {
    display: grid;
-   background-color:#074980;
+   background-color: #074980;
    width: 100%;
    height: 10rem;
-   color:#eff3f7;} 
+   color: #eff3f7;
+}
 
-#bullDog{
-   grid-area:bullDog;
-   background-color: #074980;}
+#bullDog {
+   grid-area: bullDog;
+   background-color: #074980;
+}
 
-.dressdCatBx{
+.dressdCatBx {
    display: grid;
    grid-template-columns: 1fr;
    grid-area: dressdCatBx;
    margin: 0 auto;
-   width:fit-content;
-   height: fit-content;}
+   width: fit-content;
+   height: fit-content;
+}
 
-.catTile{
+.catTile {
    display: flex;
    flex-direction: column;
-   }
+}
 
-.productInfo{
-   height:2rem;
-   width:10rem;
-   background-color: #39b173;}
+.productInfo {
+   height: 2rem;
+   width: 10rem;
+   background-color: #39b173;
+}
 
-.logoImg{
+.logoImg {
    height: 60%;
    width: 60%;
    object-fit: contain;
    margin: 0 auto;
-   padding-top: 7%;}
+   padding-top: 7%;
+}
 
-#pawscityimg{ 
-   grid-area: pawscityimg;
-   width: 100%;
-   margin:0 auto;}
-
-.typeofpet{
-   max-height:100%; 
+.typeofpet {
+   max-height: 100%;
    height: 100%;
    object-fit: cover;
-   width:100%;
+   width: 100%;
    display: grid;
-   max-width: 100%; 
-   margin:0  auto;
+   max-width: 100%;
+   margin: 0 auto;
    row-gap: 0;
 }
 
- @media screen and (min-width:700px) {
-   header, footer{
-      background-color: #003964;
-      height:100%;
-      width: 100%;}
+@media screen and (min-width:700px) {
 
-      .mainImgGrid{
-         grid-template-areas:
+   header,
+   footer {
+      background-color: #003964;
+      height: 100%;
+      width: 100%;
+   }
+
+   .mainImgGrid {
+      grid-template-areas:
          "one    two"
          "three  four"
          "five   five";
-      }
-   
-   .dressdCatBx{
+   }
+
+   .dressdCatBx {
       display: grid;
       grid-area: dressdCatBx;
       grid-template-columns: 1fr 1fr;
       margin: 0 auto;
-      width:fit-content;
-      height: fit-content;}
+      width: fit-content;
+      height: fit-content;
+   }
 
-   .searchTxt{
+   .searchTxt {
       height: 2.6em;
       width: 12em;
       vertical-align: top;
-      position: relative;
+      /* position: relative; */
       left: .3rem;
-      border:none;
+      border: none;
       border-bottom-left-radius: 10%;
-      border-top-left-radius:10%;}
+      border-top-left-radius: 10%;
+   }
 
-   .companyname{
+   .companyname {
       display: grid;
-      background-color:#074980;
-      grid-area:companyname;
-      height:4rem;
-      padding-bottom:50px;} 
+      background-color: #074980;
+      grid-area: companyname;
+      height: 4rem;
+      padding-bottom: 50px;
+   }
 
-   .searchImg{
+   .searchImg {
       display: none;
-      height:fit-content;}
-   
-   .logoImg{
+      height: fit-content;
+   }
+
+   .logoImg {
       height: 25%;
-      width:fit-content;
-      object-fit:contain;
+      width: fit-content;
+      object-fit: contain;
       padding-top: 1.8%;
-      padding-left:2%;
-      margin-left: 0;}
-      
-      #puppyHeroMobl{
-         display:none;}
+      padding-left: 2%;
+      margin-left: 0;
+   }
 
-      #puppyHeroPC{
-         display: flex;}
+   #puppyHeroMobl {
+      display: none;
+   }
 
-      #packOfDogsPC{
-         display: none;}
+   #puppyHeroPC {
+      display: flex;
+   }
 
-      #packOfDogsMobl{
-         display:flex;}
+   #packOfDogsPC {
+      display: none;
+   }
 
-      .typeofpet0{
+   #packOfDogsMobl {
+      display: flex;
+   }
+
+   .dog-yellow-div {
       display: grid;
       grid-template-areas:
-      "puppyHeroTxt    puppyHeroTxt"
-      "puppyHeroPC     puppyHeroPC" 
-      "packOfDogsMobl      soloCat"
-      "goldFish        talkingBird"
-      "salamander      salamander"
-      "doggoText       doggoText"
-      "bullDog         bullDog"
-      "dressdCat1      dressdCat2"
-      "dressdCat3       dressdCat4";}
+         "puppyHeroTxt    puppyHeroTxt"
+         "puppyHeroPC     puppyHeroPC"
+         "typeofpetBtn    typeofpetBtn"
+         ;
    }
+}
 
 
 @media screen and (min-width:1080px) {
-   header, footer{
+
+   header,
+   footer {
       background-color: #003964;
-      height:100%;
+      height: 100%;
       width: 100%;
-      display: inline-block;}
-   
-   button#hamburgerBtn{
-      display:none;
+      display: inline-block;
    }
-   
-   .mainImgGrid{
-   padding: 10% 10%;
-   gap: 3rem;
-   grid-template-areas:
-      "one    one    two"
-      "three  four   five";
+
+   button#hamburgerBtn {
+      display: none;
    }
-   
-   .dressdCatBx{
+
+   .mainImgGrid {
+      /* padding: 10% 10%; */
+      /* gap: 3rem; */
+      grid-template-areas:
+         "one    one    two"
+         "three  four   five";
+   }
+
+   .dressdCatBx {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-area:dressdCatBx ;
+      grid-area: dressdCatBx;
       margin: 0 auto;
-      width:fit-content;
-      height: fit-content;}
-   
-   .puppyHeroTxt  h1{
-      display:grid;
+      width: fit-content;
+      height: fit-content;
+   }
+
+   .puppyHeroTxt h1 {
+      display: grid;
       grid-area: puppyHeroTxt;
    }
 
    .puppyHeroTxt p {
-      position: absolute;
-      padding-top:60%;
-      
+      /* position: absolute; */
+      padding-top: 60%;
+
    }
-   
-   #soloCat{
+
+   #soloCat {
       margin-top: 2%;
       height: 800px;
       width: 600px;
    }
 
-   #packOfDogsPC{
+   #packOfDogsPC {
       width: 1200px;
       height: 800px;
       margin-top: 1%;
    }
 
-   .demoCat{
+   .demoCat {
       width: 300px;
       height: 300px;
       margin: 0 auto;
       enable-background: #3f9ce0;
    }
-   #puppyHeroMobl{
-      display:none;
-   }
-   #puppyHeroPC{
-      display: flex;
-   }
-   #packOfDogsMobl{
+
+   #puppyHeroMobl {
       display: none;
    }
-   #packOfDogsPC{
+
+   #puppyHeroPC {
       display: flex;
    }
-   .typeofpet0{
+
+   #packOfDogsMobl {
+      display: none;
+   }
+
+   #packOfDogsPC {
+      display: flex;
+   }
+
+   .dog-yellow-div {
       display: grid;
       grid-template-areas:
-      "puppyHeroTxt    puppyHeroTxt    puppyHeroTxt"
-      "puppyHeroPC     puppyHeroPC     puppyHeroPC" 
-      "packOfDogsPC    packOfDogsPC      soloCat"
-      "goldFish        talkingBird     salamander"
-      "doggoText       doggoText        doggoText"
-      "bullDog         bullDog          bullDog"
-      "pawscityimg     pawscityimg     pawscityimg";}    
+         "puppyHeroTxt    puppyHeroTxt    puppyHeroTxt"
+         "puppyHeroPC     puppyHeroPC     puppyHeroPC"
+         "typeofpetBtn    typeofpetBtn    typeofpetBtn";
    }
- 
-   #banner{
+}
+
+#banner {
    display: grid;
-   height:100px;
-   background-color:red;}
+   height: 100px;
+   background-color: red;
+}
