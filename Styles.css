@@ -5,6 +5,12 @@
       width: 100%;
       display: inline-block;}
    
+   .closeBtn{
+      height: 50px;
+      width: 50px;
+      background-color: #003964;
+      color: #eff3f7;
+   }
    .findAStore{
       text-align: center;
       color:#eff3f7;
@@ -418,7 +424,6 @@ header{grid-area:header;}
    .mainImgGrid{
    padding: 10% 10%;
    gap: 3rem;
-   height: 300px;
    grid-template-areas:
       "one    one    two"
       "three  four   five";
