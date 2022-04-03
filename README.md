@@ -1,0 +1,1 @@
+The objective of this project was to create a webpage according to client specifications. The positioning is still a work in progress. The content is in need of a contact form and customer testomonials section.
