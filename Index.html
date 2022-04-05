@@ -11,7 +11,9 @@
 
 <body>
     <header>
-        <div id="banner"><button class="closeBtn" type="button" onclick="final();">X</button>
+        <div id="banner">
+            <button class="closeBtn" type="button" onclick="final();">X</button>
+            <div class="random-dog" id="random-dog"></div>
             <p class="saleTxt">SALE</p>
         </div>
         <p class="findAStore">FIND A STORE</p>
@@ -29,17 +31,15 @@
 
         <!-- Start of Navigation -->
 
-        <nav class="menuBtn">
-            <div class="hambtn">
-                <ul id="primaryNav">
-                    <li class="active" id="dog"><a href="#">DOGS</a></li>
-                    <li id="cat"><a href="#">CATS</a></li>
-                    <li id="bird"><a href="#">BIRDS</a></li>
-                    <li id="fish"><a href="#">FISH</a></li>
-                    <li id="reptile"><a href="#">REPTILES</a></li>
-                </ul>
-                <button id="hamburgerBtn">&#9776;</button>
-            </div>
+        <nav class="navigation">
+            <ul id="primaryNav">
+                <li class="active" id="dog"><a href="#">DOGS</a></li>
+                <li id="cat"><a href="#">CATS</a></li>
+                <li id="bird"><a href="#">BIRDS</a></li>
+                <li id="fish"><a href="#">FISH</a></li>
+                <li id="reptile"><a href="#">REPTILES</a></li>
+            </ul>
+            <button id="hamburgerBtn">&#9776;</button>
         </nav>
         <!-- End of Navigation -->
 
@@ -50,13 +50,13 @@
                 <h1>THE BEST CARE FOR YOUR LITTLE ONE</h1>
                 <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
             </div>
-            <img src="Images/puppy-hero-bg.jpg" alt="puppyhero_backgroundPC" id="puppyHeroPC" class="typeofpet">
-            <img src="Images/gotpuppy-hero-bg.jpg" alt="puppyhero_backgroundMobl" id="puppyHeroMobl" class="typeofpet">
+            <!-- <img src="Images/puppy-hero-bg.jpg" alt="puppyhero_backgroundPC" id="puppyHeroPC" class="typeofpet"> -->
+            <!-- <img src="Images/gotpuppy-hero-bg.jpg" alt="puppyhero_backgroundMobl" id="puppyHeroMobl" class="typeofpet"> -->
             <button class="typeofpetBtn" id="puppyHeroBtn"></button>
         </div>
         <div class="mainImgGrid">
             <div class="one">
-                <img src="Images/packOfDogsPC.jpg" alt="pack_of_dogs_pc" id="packOfDogsPC" class="typeofpet">
+                <!-- <img src="Images/packOfDogsPC.jpg" alt="pack_of_dogs_pc" id="packOfDogsPC" class="typeofpet"> -->
                 <!-- <img src="Images/sizeddogs.jpg" alt="dogs"id="packOfDogsMobl" class="typeofpet"> -->
                 <div>
                     <h3>DOGS</h3>
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="two">
-                <img src="Images/gotcats.jpg" alt="dogs" id="soloCat" class="typeofpet">
+                <!-- <img src="Images/gotcats.jpg" alt="dogs" id="soloCat" class="typeofpet"> -->
                 <div>
                     <h3>CATS</h3>
                     <p> This is the title...</p>
@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="three">
-                <img src="Images/fish12.jpg" alt="fish" id="goldFish" class="typeofpet">
+                <!-- <img src="Images/fish12.jpg" alt="fish" id="goldFish" class="typeofpet"> -->
                 <div>
                     <h3>FISH</h3>
                     <p> This is the title...</p>
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="four">
-                <img src="Images/twobirds.jpg" alt="bird" id="talkingBird" class="typeofpet">
+                <!-- <img src="Images/twobirds.jpg" alt="bird" id="talkingBird" class="typeofpet"> -->
                 <div>
                     <h3>BIRDS</h3>
                     <p> This is the title...</p>
@@ -97,7 +97,7 @@
                 </div>
             </div>
             <div class="five">
-                <img src="Images/reptiles.jpg" alt="snake" id="salamander" class="typeofpet">
+                <!-- <img src="Images/reptiles.jpg" alt="snake" id="salamander" class="typeofpet"> -->
                 <div>
                     <h3>REPTILES</h3>
                     <p> This is the title...</p>
@@ -107,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="doggoImageDiv">
             <div class="doggoText">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -115,7 +115,7 @@
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <img src="Images/doggo-photo.png" alt="sitting dog" id="bullDog" class="typeofpet">
+            <!-- <img src="Images/doggo-photo.png" alt="sitting dog" id="bullDog" class="typeofpet"> -->
         </div>
         <!-- End of background images -->
         <!-- For Sale Items   -->
@@ -138,7 +138,7 @@
         <!-- For Sale Items   -->
         <!-- About-Pawscity -->
         <div class="open-sign-div">
-            <img src="Images/about-pawscity.jpg" alt="Shop Open" id="pawscityimg">
+            <img src="Images/about-pawscity.jpg" alt="Shop Open" id="open-sign-img">
         </div>
     </main>
     <footer>

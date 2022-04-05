@@ -59,7 +59,7 @@ footer {
 
 /* Start of Menu Button  */
 
-button#hamburgerBtn {
+#hamburgerBtn {
    background: #f7b129;
    border: none;
    color: #003964;
@@ -71,15 +71,10 @@ button#hamburgerBtn {
 }
 
 
-.menuBtn {
+.navigation {
    display: block;
    /* position: relative; */
    background: #f7b129;
-}
-
-nav ul {
-   margin: 0;
-   padding: 0;
 }
 
 nav li {
@@ -124,6 +119,8 @@ nav ul.open {
 
 nav ul {
    display: none;
+   margin: 0;
+   padding: 0;
 }
 
 nav li.active {
@@ -141,26 +138,42 @@ nav li.active {
       "three"
       "four"
       "five";
+   max-width:100%
 }
 
 .one {
    grid-area: one;
+   background: url(Images/dogs.jpg) no-repeat;
+   height: 500px; 
+   background-position: -1420 0;
 }
 
 .two {
    grid-area: two;
+   background: url(Images/cats.jpg) no-repeat;;
+   background-size: contain;
+   height: 500px; 
+   background-position: center; 
+   background-repeat: no-repeat; 
+   background-size: cover; 
 }
 
 .three {
    grid-area: three;
+   background: url(Images/fish.jpg) no-repeat;
+   background-size: contain;
 }
 
 .four {
    grid-area: four;
+   background-image: url(Images/birds.jpg);
+   background-size: contain;
 }
 
 .five {
    grid-area: five;
+   background-image: url(Images/reptiles.jpg);
+   background-size: contain;
 }
 
 /* Buttons for Non for sale background images */
@@ -169,9 +182,9 @@ nav li.active {
    display: grid;
    grid-template-areas:
    "puppyHeroTxt"
-   "puppyHeroPC"
    "typeofpetBtn"
    ;
+   background-image: url(Images/puppy-hero-bg.jpg);
 }
 
 header {
@@ -222,6 +235,9 @@ header {
    grid-area: bullDog;
 }
 
+.doggoImageDiv{
+   background-image: url(Images/doggo-photo.png);
+}
 .doggoText {
    grid-area: doggoText;
 }
@@ -252,6 +268,9 @@ header {
    margin:0 auto;
 }
 
+#open-sign-img {
+   width: 100%;
+}
 
 .companyname {
    display: grid;
@@ -499,6 +518,15 @@ header {
 
 @media screen and (min-width:1080px) {
 
+   nav ul {
+      display: flex;
+      flex-direction: row; 
+   }
+
+   nav ul li {
+      width: 20%;
+   }
+
    header,
    footer {
       background-color: #003964;
@@ -507,7 +535,8 @@ header {
       display: inline-block;
    }
 
-   button#hamburgerBtn {
+
+   #hamburgerBtn {
       display: none;
    }
 
@@ -584,7 +613,14 @@ header {
 }
 
 #banner {
-   display: grid;
-   height: 100px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
    background-color: red;
+}
+
+.random-dog{
+   text-align: center;
+   color:#eff3f7;
 }
