@@ -10,6 +10,7 @@ The objective of this project was to create a webpage according to client specif
 
 ### JavaScript Feature:
 - Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction - must be done with some JavaScript code. (Sale banner)
+- Uses one or more JavaScript objects and then modifies it for display on the webpage
 
 ### Additional Feature:
 - Use Flexbox or CSS Grid to organize content areas based on mobile or desktop views.
