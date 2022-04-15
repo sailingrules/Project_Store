@@ -161,20 +161,22 @@ nav li.active {
 .three {
    grid-area: three;
    background: url(Images/fish.jpg) no-repeat;
-   background-size: contain;
+   background-size: cover;
+   height: 500px;
 }
 
 .four {
    grid-area: four;
    background-image: url(Images/birds.jpg);
-   background-size: contain;
+   background-size: cover;
    background-repeat: no-repeat;
+   height: 500px;
 }
 
 .five {
    grid-area: five;
    background-image: url(Images/reptiles.jpg);
-   background-size: contain;
+   background-size: cover;
    background-repeat: no-repeat;
 }
 
@@ -182,7 +184,7 @@ nav li.active {
 
 .dog-yellow-div {
    background-image: url(Images/puppy-hero-bg.jpg);
-   background-position:center;
+   background-position:center  right 20%;
    display: grid;
    grid-template-areas:
    "puppyHeroTxt"
@@ -204,14 +206,6 @@ header {
 
 #puppyHeroPC {
    grid-area: puppyHeroPC;
-}
-
-#puppyHeroMobl {
-   grid-area: puppyHeroMobl;
-}
-
-#packOfDogsMobl {
-   grid-area: packOfDogsMobl;
 }
 
 #packOfDogsPC {
@@ -240,7 +234,14 @@ header {
 
 .doggoImageDiv{
    background-image: url(Images/doggo-photo.png);
+   height:500px;
+   width: 100%;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-color: #074980;
 }
+
 .doggoText {
    grid-area: doggoText;
 }
@@ -283,20 +284,15 @@ header {
    padding-bottom: 50px;
 }
 
-#puppyHeroMobl {
-   display: flex;
-   grid-area: puppyHeroMobl;
-}
 
 .puppyHeroTxt {
    /* position: relative; */
    display: grid;
    grid-area: puppyHeroTxt;
    color: #003964;
-   width: 100%;
-   height: fit-content;
-   background-color: #f7b129;
    margin: 0;
+   height: fit-content;
+   width: fit-content;
 }
 
 .puppyHeroTxt p {
@@ -305,14 +301,6 @@ header {
    word-wrap: break-word;
 }
 
-#puppyHeroPC {
-   display: none;
-}
-
-#packOfDogsMobl {
-   grid-area: packOfDogsMobl;
-   display: flex;
-}
 
 .typeofpetBtn {
    height: 35px;
@@ -488,10 +476,6 @@ header {
       margin-left: 0;
    }
 
-   #puppyHeroMobl {
-      display: none;
-   }
-
    #puppyHeroPC {
       display: flex;
    }
@@ -500,9 +484,6 @@ header {
       display: none;
    }
 
-   #packOfDogsMobl {
-      display: flex;
-   }
 
    .dog-yellow-div {
       display: grid;
