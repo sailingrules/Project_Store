@@ -1,3 +1,7 @@
+body {
+   margin: 0;
+}
+
 header,
 footer {
    background-color: #003964;
@@ -133,23 +137,23 @@ nav li.active {
    display: grid;
    gap: 0;
    grid-template-areas:
-      "one"
-      "two"
-      "three"
-      "four"
-      "five";
+      "tile-dog"
+      "tile-cat"
+      "tile-fish"
+      "tile-bird"
+      "tile-reptile";
    max-width:100%
 }
 
-.one {
-   grid-area: one;
+.tile-dog {
+   grid-area: tile-dog;
    background: url(Images/dogs.jpg) no-repeat;
    height: 500px; 
    background-position:bottom 30% left;
 }
 
-.two {
-   grid-area: two;
+.tile-cat {
+   grid-area: tile-cat;
    background: url(Images/cats.jpg);
    background-size: contain;
    height: 500px; 
@@ -158,33 +162,37 @@ nav li.active {
    background-size: cover; 
 }
 
-.three {
-   grid-area: three;
+.tile-fish {
+   grid-area: tile-fish;
    background: url(Images/fish.jpg) no-repeat;
    background-size: cover;
    height: 500px;
 }
 
-.four {
-   grid-area: four;
+.tile-bird {
+   grid-area: tile-bird;
    background-image: url(Images/birds.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    height: 500px;
 }
 
-.five {
-   grid-area: five;
+.tile-reptile {
+   grid-area: tile-reptile;
    background-image: url(Images/reptiles.jpg);
    background-size: cover;
    background-repeat: no-repeat;
+   height:500px;
+   background-position: center;
 }
 
 /* Buttons for Non for sale background images */
 
 .dog-yellow-div {
    background-image: url(Images/puppy-hero-bg.jpg);
-   background-position:center  right 20%;
+   background-position: right 27% bottom 40%;
+   background-size: 1500px;
+   height: 600px;
    display: grid;
    grid-template-areas:
    "puppyHeroTxt"
@@ -232,13 +240,16 @@ header {
    grid-area: bullDog;
 }
 
-.doggoImageDiv{
+/* .bulldog-sitting{
    background-image: url(Images/doggo-photo.png);
-   height:500px;
-   width: 100%;
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
+   height:500px;
+} */
+
+.doggoImageDiv{
+   width: 100%;
    background-color: #074980;
 }
 
@@ -298,7 +309,8 @@ header {
 .puppyHeroTxt p {
    /* position: absolute; */
    padding-top: 60%;
-   word-wrap: break-word;
+   width: 90%;
+   /* word-wrap: break-word; */
 }
 
 
@@ -384,8 +396,8 @@ header {
    grid-template-columns: 1fr;
    grid-area: dressdCatBx;
    margin: 0 auto;
-   width: fit-content;
-   height: fit-content;
+   /* width: fit-content;
+   height: fit-content; */
 }
 
 .catTile {
@@ -429,9 +441,9 @@ header {
 
    .mainImgGrid {
       grid-template-areas:
-         "one    two"
-         "three  four"
-         "five   five";
+         "tile-dog    tile-cat"
+         "tile-fish  tile-bird"
+         "tile-reptile   tile-reptile";
    }
 
    .dressdCatBx {
@@ -486,6 +498,9 @@ header {
 
 
    .dog-yellow-div {
+      background-position: right 27% bottom 35%;
+      background-size: 1550px;
+      height: 650px;
       display: grid;
       grid-template-areas:
          "puppyHeroTxt    puppyHeroTxt"
@@ -524,8 +539,17 @@ header {
       /* padding: 10% 10%; */
       /* gap: 3rem; */
       grid-template-areas:
-         "one    one    two"
-         "three  four   five";
+         "tile-dog    tile-dog    tile-cat"
+         "tile-fish  tile-bird   tile-reptile";
+   }
+
+   .doggoImageDiv {
+      display: flex;
+      flex-direction:  row-reverse;
+   }
+
+   #bullDog {
+      width: 500px;
    }
 
    .dressdCatBx {
@@ -584,6 +608,9 @@ header {
    }
 
    .dog-yellow-div {
+      background-position: right 27% bottom 17%;
+      background-size: 1350px;
+      height: 650px;
       display: grid;
       grid-template-areas:
          "puppyHeroTxt    puppyHeroTxt    puppyHeroTxt"
